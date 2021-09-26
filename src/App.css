@@ -1,0 +1,102 @@
+
+.all {
+  display:flex;
+  overflow:hidden;
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#e66465, #9198e5);
+}
+.generalbox {
+  border-style:solid;
+  border-width:2px;
+  border-color:black;
+  width: 200px;
+  height: 200px;
+  float:left;
+  margin: auto;
+}
+.textbox:hover {
+  /* background-color:red; */
+  animation:anim 1s;
+  animation-fill-mode:forwards;
+  cursor: pointer;
+}
+.textbox:hover p {
+  font-family:"monospace";
+}
+
+.image:hover {
+  border-style:solid;
+  border-width:10px;
+  border-color:yellow;
+  width: 200px;
+  height: 200px;
+}
+
+p {
+  /* font-family:"serif"; */
+  text-align:center;
+  vertical-align:middle;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.image {
+  vertical-align:middle;
+  text-align: center;
+  display: table-cell;
+  transition:border-width 0.5s;
+  cursor: wait;
+}
+
+.textbox {
+  text-align:center;
+  vertical-align:middle;
+  line-height: 200px;
+}
+
+@keyframes anim
+{
+    to {background-color:red}
+}
+
+@media only screen and (max-width: 1200px) {
+  #img_2{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #img_1{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #img_0{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #text_2{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #text_1{
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  #text_0{
+    display:none;
+  }
+}
